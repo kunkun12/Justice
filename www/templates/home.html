@@ -1,0 +1,26 @@
+<ion-view >
+ <ion-content scroll='false' class='home' >
+ <ion-header-bar align-title="center" class="bar-positive">
+  <h1 class="title">首页</h1>
+</ion-header-bar>
+      <div class='flexcontainer'>
+      	<div  on-touch="onTouch(1)" class="flexitem first">
+      		<img src="img/book.png" alt="">
+      		<h3>职场上，我的那点权利</h3>
+      	</div>      
+      	<div on-touch="onTouch(2)" class="flexitem second">
+      		<img src="img/glass.png" alt="">
+      		<h3>谁是大坏蛋，找出Ta</h3>
+      	</div>
+      	<div on-touch="onTouch(3)" class="flexitem third">
+     		<img src="img/help.png" alt="">
+      		<h3>让我帮帮你</h3>
+      	</div>
+      </div>
+ </ion-content>
+ <ion-content ng-show='showloading' scroll='false' class='loading'>
+ <img class='logo' src="img/applogo.png" alt="">
+ <br/>
+ <button ng-click='getInto()' class="button intobt button-calm">进入</button>
+ </ion-content>
+</ion-view>

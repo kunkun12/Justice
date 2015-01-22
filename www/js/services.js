@@ -1,13 +1,16 @@
 angular.module('JusticeApp.services', [])
-.factory('CaseList', function() {
-  return [{
-    name:'租房案例一',
-  },{
-    name:'租房案例二',
-  },{
-    name:'租房案例三',
-  },{
-    name:'租房案例四',
-  }]
-})
+.service('getdata',['$http','$q',function($http,$q){
+
+	this._httpget = function (url) {
+        var deferred = $q.defer();
+        $http.get(url)
+            .success(function (res) {              
+                    deferred.resolve(data);                   
+            }).error(function () {
+                deferred.reject('There was an error');
+            });
+        return deferred.promise;
+    };
+
+}]);
 

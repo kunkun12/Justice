@@ -26,8 +26,8 @@
 }
 
 .loading.ng-hide-add {
-  -webkit-animation:1s hide;
-  animation:1s hide;
+  -webkit-animation:300ms hide;
+  animation:300ms hide;
 }
 
 @keyframes hide {

@@ -121,6 +121,6 @@ border-radius: 10px;
 	}
 
      /*解决当view 切换时bar自动隐藏的bug不知道什么*/
-	.workrightview .bar-positive.hide{
+	.unhide.hide{
 		display: inherit;
 	}

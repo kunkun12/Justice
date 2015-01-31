@@ -14,17 +14,8 @@
       </div>
 <!-- 列表 -->
  <ion-list>
-  <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-   <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-    <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-     <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-    <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-    <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-    <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-   <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-    <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-    <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
-   <ion-item href="#/workplacerights/cartoon">搜索大坏蛋</ion-item>
+ <ion-item href="#/workplacerights/cartoon" ng-repeat='item in BlackIntermediaryData|filter:{name:data.searchtext}'>
+ {{item.name}}</ion-item>
 </ion-list>
  </ion-content>
 </ion-view>

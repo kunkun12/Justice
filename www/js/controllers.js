@@ -17,9 +17,10 @@ angular.module('JusticeApp.controllers', [])
 			  		break;
 			  }
 		  }
-}).controller("badManSearchCtl",["$scope",function($scope){
+}).controller("badManSearchCtl",["$scope",'dataService',function($scope,dataService){
 	$scope.data={};
-	$scope.data.searchtext='helloworld';
+	$scope.data.searchtext="";
+	$scope.BlackIntermediaryData=dataService.getBlackIntermediary();
 	$scope.$watch('data.searchtext',function(newvalue,oldvalue){
      console.log("newvalue:   ",newvalue,"    oldvalue: ",oldvalue);
 	});
